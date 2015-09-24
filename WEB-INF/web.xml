@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+    <display-name>Fabflix</display-name>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    
+    <resource-ref>
+        <description>
+            Resource reference to a factory for java.sql.Connection
+            instances that may be used for talking to a particular
+            database that is configured in the server.xml file.
+        </description>
+        <res-ref-name>jdbc/TestDB</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+
+  <servlet>
+    <servlet-name>IndexServlet</servlet-name>
+    <servlet-class>Index</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndexServlet</servlet-name>
+    <url-pattern>/servlet/index</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AdvSearchServlet</servlet-name>
+    <servlet-class>AdvSearch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdvSearchServlet</servlet-name>
+    <url-pattern>/servlet/advSearch</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PageServlet</servlet-name>
+    <servlet-class>Page</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageServlet</servlet-name>
+    <url-pattern>/servlet/page</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>Search</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/servlet/search</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SortServlet</servlet-name>
+    <servlet-class>Sort</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SortServlet</servlet-name>
+    <url-pattern>/servlet/sort</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SingleMovieServlet</servlet-name>
+    <servlet-class>SingleMovie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SingleMovieServlet</servlet-name>
+    <url-pattern>/servlet/singleMovie</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>StarServlet</servlet-name>
+    <servlet-class>SingleStar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StarServlet</servlet-name>
+    <url-pattern>/servlet/star</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ShowGenresServlet</servlet-name>
+    <servlet-class>ShowGenres</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowGenresServlet</servlet-name>
+    <url-pattern>/servlet/showGenres</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>BrowseByGenresServlet</servlet-name>
+    <servlet-class>BrowseByGenres</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BrowseByGenresServlet</servlet-name>
+    <url-pattern>/servlet/browseByGenres</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ShowTitlesServlet</servlet-name>
+    <servlet-class>ShowTitles</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowTitlesServlet</servlet-name>
+    <url-pattern>/servlet/showTitles</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>BrowseByTitlesServlet</servlet-name>
+    <servlet-class>BrowseByTitles</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BrowseByTitlesServlet</servlet-name>
+    <url-pattern>/servlet/browseByTitles</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ShoppingCartServlet</servlet-name>
+    <servlet-class>ShoppingCart</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShoppingCartServlet</servlet-name>
+    <url-pattern>/servlet/shoppingCart</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CheckoutServlet</servlet-name>
+    <servlet-class>Checkout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckoutServlet</servlet-name>
+    <url-pattern>/servlet/checkout</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddMovieServlet</servlet-name>
+    <servlet-class>AddMovie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddMovieServlet</servlet-name>
+    <url-pattern>/servlet/addMovie</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/servlet/logout</url-pattern>
+  </servlet-mapping>
+
+
+
+</web-app>
